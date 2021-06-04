@@ -1,4 +1,20 @@
 # H2employeedemo
+DESCRIPTION
+
+This is a simple CRUD application developed to keep employee records, administrators can interact with the application and perform these functions listed. 
+
+GET read, POST create, PUT update, and DELETE (Set to Inactive and hide from results) records for Employees
+
+I utilized the MVN design pattern to help separate and divide the organization of this project to its individual working pieces for functionality and organization through OOP principles.
+
+To demonstrate use of new Java 8 technologies I implemented a Stream to put everything into a list from all employees stored and then I have filtered out to create and return a new list only containing the employees with an ACTIVE enum status.
+
+This application was written in Java with Eclipse IDE it is a Maven project with SpringBoot And H2 dependencies, with a connection to a H2 database where the data is stored in memory. I utitlized Postman to test end points for all functions. I do have the Knowledge as well to store these into a MySQL database as well for continued storage.
+
+I have listed a Link to folder in REPO that contains the ScreenShots of functionality below
+
+(https://github.com/skeletoro/H2employeedemo/tree/main/employee-test-h2/employee-test-h2/ScreenShots)
+
 INSTALLATION
 required programs to run this application it is utilized with:
 Eclipse IDE Version: 2020-09 (4.17.0)
@@ -24,37 +40,22 @@ Set the end point to http://localhost:8080/employees and enter the information l
 
 complete a GET request to retrieve all employees.*
 
-for a specific Employees add a specific add an aditional end point with the Employees ID http://localhost:8080/employees/1 
-and run an additional GET request.*
+for a specific Employees add a specific add an aditional end point with the Employees ID ie http://localhost:8080/employees/1 
+and run a GET request.*
 
 *deleted employees will not appear in active searches. 
 
 to update an employees information you need to set the end point for the employee being updated http://localhost:8080/employees/1 
-and run a PUT request after entering to update a specific employee. 
+and run a PUT request after entering updated information to update a specific employee. 
 
-to delete select a specific end point http://localhost:8080/employees/1 and send a DELETE request to set that employees status to INACTIVE 
+to delete select a specific employee set end point to the employees ID # ie http://localhost:8080/employees/1 and send a DELETE request to set that employees status to INACTIVE 
 and hide them From all results.
 
 
-DESCRIPTION
-
-This is a simple CRUD application developed to keep employee records, administrators can interact with the application and perform these functions listed. 
-
-GET read, POST create, PUT update, and DELETE (Set to Inactive and hide from results) records for Employees
-
-I utilized the MVN design pattern to help separate and divide the organization of this project to its individual working pieces for functionality and organization.
-
-To demonstrate use of new Java 8 technologies I implemented a Stream to put everything into a list from all employees stored and then I have filtered out to create and return a new list only containing the employees with an ACTIVE enum status.
-
-This application was written in Java with Eclipse IDE it is a Maven project with SpringBoot And H2 dependencies, with a connection to a H2 database where the data is stored in memory. I utitlized Postman to test end points for all functions. I do have the Knowledge as well to store these into a MySQL database as well for continued storage.
-
-I have listed a Link to folder in REPO that contains the ScreenShots of functionality below
-
-(https://github.com/skeletoro/H2employeedemo/tree/main/employee-test-h2/employee-test-h2/ScreenShots)
-
 About Me
-I am a proud self based Software Developer. With additional Projects on my GitHub linked below. I am always learning new Technologies and Languages. If I ever come across a challenge I have always been able to research extensively to come to a functional resolution. there is also an additional sister version of this application that will also run in memory on my GH that will run without a H2 database.
+I am a proud self based Software Developer. With additional Projects on my GitHub linked below. I am always learning new Technologies and Languages. If I ever come across a challenge I have always been successful in researching extensively to come to a functional resolution. there is also an additional sister version of this application that will also run in memory on my GH that will run in memory without an H2 database .
 
+My GitHub
 https://github.com/skeletoro
 
 This application was created as a Coding challenge for Kenzan Technologies. The project requirements are outlined below.
