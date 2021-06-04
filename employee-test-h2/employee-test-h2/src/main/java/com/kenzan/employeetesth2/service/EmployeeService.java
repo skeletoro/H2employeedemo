@@ -22,8 +22,6 @@ public class EmployeeService {
 	private EmployeeRepository rep;
 
 	public Employee createEmployee(Employee employee) {
-		int id = 0;
-		employee.setId(id++);
 		employee.setStatus(Status.ACTIVE);
 		return rep.save(employee);
 

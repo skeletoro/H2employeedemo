@@ -32,7 +32,7 @@ public class EmployeeController {
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public ResponseEntity<Object> getEmployee(@PathVariable int id) {
+	public ResponseEntity<Object> getEmployee(@RequestBody Employee employee,@PathVariable int id) {
 		try {
 			return new ResponseEntity<Object>(service.getEmployeeById(id), HttpStatus.OK);
 		} catch (Exception x) {
